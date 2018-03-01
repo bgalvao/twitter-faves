@@ -1,6 +1,8 @@
 # twitter-faves
-An analysis on my preferences on twitter. This is a work in progress. Its final purpose will be to 
-present it as a way to show how to use python and jupyter notebooks to people doing data science, but not yet familiar with the python toolkit, so the writing is rather casual since this is no academic paper. Herein I present `nltk`, `scikit-learn`, `pandas`, JupyterLab and some python along with it. I may make some slides that present the remaining ecosystem.
+An analysis on my preferences on twitter. This is a work in progress. Its 
+purpose is to serve as workshop material to present jupyter 
+notebooks, python and its data science ecosystem. 
+Herein I use mainly `nltk`, `scikit-learn` and `pandas`.
 
 ## Notebook index
 The notebooks present a very simple pipeline in the following order:
@@ -9,9 +11,25 @@ The notebooks present a very simple pipeline in the following order:
 3. [`clustering-tweets.ipynb`](./clustering-tweets.ipynb)
 
 
-## Dependencies
-- `conda` highly recommended
-- `jupyter-lab`
-- `nltk pandas scikit-learn`
-- `wordcloud`
-- `pip install python-twitter`
+## Running the jupyter notebooks
+
+All dependencies are listed in [`environment.yml`](./environment.yml).
+To create an environment with the required dependencies (first install `conda`):
+
+```
+cd <cloned repo directory>
+conda install -f environment.yml
+```
+
+This environment will be created with the name `twitter-faves`. To activate it, 
+run:
+
+```
+source activate twitter-faves
+```
+
+finally, to start a JupyterLab "IDE", run:
+
+```
+jupyter lab
+```
