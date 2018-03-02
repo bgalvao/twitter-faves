@@ -17,7 +17,8 @@ All dependencies are listed in [`environment.yml`](./environment.yml).
 To create an environment with the required dependencies (first install `conda`):
 
 ```
-cd <cloned repo directory>
+git clone https://github.com/bgalvao/twitter-faves.git
+cd twitter-faves
 conda install -f environment.yml
 ```
 
